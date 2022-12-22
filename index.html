@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <title>Rock Paper Scissor || Ahmad Afdhal</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <h1>Rock Paper Scissor</h1>
+      <p>Tugas Praktikum Modul 10 : Ahmad Afdhal</p>
+    </div>
+
+    <div class="option">
+      <div class="scissorBtn">
+        <button id="scissor">
+          <p id="scissor">Scissor</p>
+          <img src="/img/scissor.png" id="scissor" alt="" width="80" height="80" />
+        </button>
+      </div>
+      <div class="rockBtn">
+        <button id="rock">
+          <p id="rock">Rock</p>
+          <img src="/img/rock.png" id="rock" alt="" width="80" height="80" />
+        </button>
+      </div>
+      <div class="paperBtn">
+        <button id="paper">
+          <p id="paper">Paper</p>
+          <img src="/img/paper.png" id="paper" alt="" width="80" height="80" />
+        </button>
+      </div>
+    </div>
+
+    <div class="choice">
+      <div id="ch player">
+        <p>You :</p>
+        <p id="playerPick" class="pick"></p>
+      </div>
+      <div id="ch com">
+        <p>Computer :</p>
+        <p id="comPick" class="pick"></p>
+      </div>
+    </div>
+
+    <div class="promptGame">
+      <p id="text">You Win!</p>
+      <input id="replay" type="button" value="Play Again?" />
+    </div>
+  </div>
+  <script src=" script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(35, 67, 155);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  background-color: #efefef;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.header > h1 {
+  margin-bottom: 2px;
+}
+
+.header > p {
+  font-size: 0.8em;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.option > * > button {
+  padding: 1.5em;
+  background: #efefef;
+  border: none;
+  border-radius: 0.5rem;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.7),
+    -6px -6px 10px rgba(255, 255, 255, 0.5),
+    6px 6px 8px rgba(255, 255, 255, 0.075), 6px 6px 10px rgba(0, 0, 0, 0.15);
+}
+.option > * > button:hover {
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(255, 255, 255, 0.4),
+    2px 2px 2px rgba(255, 255, 255, 0.05), 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.option > * > button:active {
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.option > * > * > p {
+  margin-bottom: 15px;
+}
+
+.choice {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.choice > * > .pick {
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: rgb(77, 77, 255);
+}
+
+.promptGame {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: green;
+  height: 120px;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+}
+
+.promptGame > * {
+  margin-top: 10px;
+}
+
+.promptGame > input {
+  height: 40px;
+  width: 90px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.promptGame > input:hover {
+  color: white;
+  background-color: rgb(56, 56, 56);
+}
+
+.promptGame > #text {
+  font-size: 1.5em;
+  color: white;
+}
